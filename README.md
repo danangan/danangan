@@ -34,7 +34,7 @@ module "my_k8s_cluster" {
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
 ![Helm](https://img.shields.io/badge/Helm-0F1689?logo=helm&logoColor=white)
 
-A opinionated helm chart that provides a complete observability stacks for kubernetes application and cluster monitoring built using OpenTelemetry, Prometheus, Loki, Tempo, and Grafana. Features:
+An opinionated helm chart that provides a complete observability stacks for kubernetes application and cluster monitoring built using OpenTelemetry, Prometheus, Loki, Tempo, and Grafana. Features:
 
 - A standardised entry point for metrics, logs and traces using the OTel collector
 - Metrics, logs and traces collection for your apps running in Kubernetes
