@@ -27,7 +27,7 @@ Usage:
 module "my_k8s_cluster" {
   source = "github.com/danangan/terraform-aws-helm-k8s"
 
-  k8s_cluster_name = "my-k8s-cluster"
+  cluster_name = "my-k8s-cluster"
 }
 ```
 
