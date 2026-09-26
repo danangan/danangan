@@ -19,6 +19,7 @@ This terraform module provision kubernetes cluster with batteries included:
 - **Ingress**: the Kubernetes AWS ALB ingress controller
 - **Container Image Repository**: a repository for storing your workload container image
 - **Deployment IAM User&Role**: IAM user and role for your CI/CD workflow
+- **Persistence**: EBS and EFS-based persistence for your workload
 
 This module is perfect for spinning up a k8s cluster for a small project where you want to have tight control over your compute resources (for cost control purpose). Otherwise, you can always enable auto mode.
 
