@@ -15,11 +15,12 @@ This terraform module provision kubernetes cluster with batteries included:
 
 - **Networking**: VPC and subnets set up for the cluster
 - **The cluster itself**: a managed EKS control plane
-- **Node groups**: CPU and GPU-based nodes for different types of workload. You'd be able to use k8s node affinity feature to deploy your workload to the appropriate node.
+- **Node groups**: CPU and GPU-based nodes for different types of workload
 - **Ingress**: the Kubernetes AWS ALB ingress controller
 - **Container Image Repository**: a repository for storing your workload container image
-- **Deployment IAM User&Role**: IAM user and role for your CI/CD workflow
 - **Persistence**: EBS and EFS-based persistence for your workload
+- (Optional) [Cilium](#cilium) as the CNI instead of the VPC CNI and kube-proxy
+- (Optional) [EKS Auto Mode](#eks-auto-mode) if you prefer EKS to manage the nodes, ingress and storage itself
 
 This module is perfect for spinning up a k8s cluster for a small project where you want to have tight control over your compute resources (for cost control purpose). Otherwise, you can always enable auto mode.
 
