@@ -4,7 +4,7 @@ I build and operate cloud infrastructure, with focus on AWS, Kubernetes, and AWS
 
 ## 🚀 Featured Work
 
-### [k8s Terraform Module](https://github.com/danangan/terraform-aws-helm-k8s)
+### [AWS EKS k8s Terraform Module](https://github.com/danangan/terraform-aws-helm-k8s)
 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white)
@@ -33,7 +33,7 @@ module "my_k8s_cluster" {
 }
 ```
 
-### [k8s Observability Stack](https://github.com/danangan/k8s-obstack)
+### [k8s Observability Stack (obstack)](https://github.com/danangan/k8s-obstack)
 
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
 ![Helm](https://img.shields.io/badge/Helm-0F1689?logo=helm&logoColor=white)
