@@ -43,7 +43,7 @@ An opinionated helm chart that provides a complete observability stacks for kube
 - A standardised entry point for metrics, logs and traces using the OTel collector
 - Metrics, logs and traces collection for your apps running in Kubernetes
 - Kubernetes cluster metrics
-- Host (node) metrics
+- Host (node) metrics, including GPU metrics (nvidia only)
 - A Grafana UI to query and explore metrics, logs and traces
 - Persistent volume for the backends
 - Ingress setup to expose Grafana UI
@@ -52,3 +52,12 @@ Usage:
 ```sh
 helm install obstack oci://ghcr.io/danangan/charts/obstack --version <version>
 ```
+
+### [LLM Model Deployment to k8s](https://github.com/danangan/diy-llm)
+
+This project is an experimental DIY project to deploy an Open Source LLM model to AWS EKS using vLLM as the runtime.
+
+This project:
+- Deploys LLM model as a container in AWS EKS using S3 as model storage. The cluster is set up using [terrform-aws-helm-k8s](https://github.com/danangan/terraform-aws-helm-k8s).
+- Complete observability stack via [k8s-obstack]((https://github.com/danangan/k8s-obstack)
+  - vLLM exports traces and metrics that are also configured, so they will be visible in Grafana
