@@ -1,8 +1,34 @@
 # Hi, I'm Danang 👋
 
-I build and operate cloud infrastructure, with a focus on AWS, Kubernetes, and Terraform. I also write code in Python, JavaScript/TypeScript, and Go!
+I'm a full-stack engineer working across frontend, backend, and infrastructure. I build things using Javascript/Typescript, Python, Go, Terraform, AWS.
 
 ## 🚀 Featured Work
+
+### [SaaS Core - A full-stack base for building a SaaS product](https://github.com/danangan/saas-core)
+
+A base for multi-tenant SaaS products. Each company is its own workspace (like Slack). This projects handle the base SaaS features that you can build on top on so you can focus on building the actual product. Built in Typescript using Next.js (frontend) and Fastify (backend).
+
+Features:
+- Authentication
+  - Log in
+  - Account creation
+- Platform admin
+  - Company management: create, rename, activate or deactivate, delete, change the plan
+  - User management: invite users, one at a time or in bulk
+  - Role management: company admin or member
+  - Company activity log
+- User admin
+  - Manage the team: invite, edit, change roles, deactivate, delete
+  - Rename the company
+- All user
+  - Settings: personal info, change password, sign out everywhere
+ 
+This project also provides you with complete testing setup:
+  - unit test and integration test runner using jest
+  - integration test libraries using testcontainers
+  - end2end test setup using playwright
+    - staging mode
+    - local mode where you can run end2end test against a local dependency, useful for local development
 
 ### [LLM Deployment to k8s](https://github.com/danangan/diy-llm)
 
