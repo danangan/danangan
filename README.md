@@ -4,6 +4,39 @@ I'm a full-stack engineer working across frontend, backend, and infrastructure. 
 
 ## 🚀 Featured Work
 
+### [Knowledge Base - A RAG-powered chatbot with file management](https://github.com/danangan/knowledge-base)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![Fastify](https://img.shields.io/badge/Fastify-000000?logo=fastify&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Haystack](https://img.shields.io/badge/Haystack-1C3D5A)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![Milvus](https://img.shields.io/badge/Milvus-00A1EA?logo=milvus&logoColor=white)
+
+A full-stack application written in TypeScript and Python, using PostgreSQL for core app persistence and Milvus as the vector store.
+
+Features:
+- Chat
+  - Converse with AI
+  - Chat history
+- Knowledge base management
+  - Upload files in various formats (.pdf, .md, .txt, .docx, .xlsx)
+  - Delete files
+  - Organise files into folders
+  - Bulk upload from a compressed archive
+
+Architecture:
+- Core app (TypeScript)
+  - Frontend (Next.js)
+  - Backend (Fastify)
+    - File management
+    - Chat management
+- Retrieval service (Python, with FastAPI for the REST API and Haystack for the RAG pipeline)
+  - Runs the RAG pipeline that converts users' files into vectors and stores them in the vector DB
+  - Provides a search API
+
 ### [SaaS Core - A full-stack base for building a SaaS product](https://github.com/danangan/saas-core)
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
