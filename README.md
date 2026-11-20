@@ -15,27 +15,9 @@ I'm a full-stack engineer working across frontend, backend, and infrastructure. 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
 ![Milvus](https://img.shields.io/badge/Milvus-00A1EA?logo=milvus&logoColor=white)
 
-A full-stack application written in TypeScript and Python, using PostgreSQL for core app persistence and Milvus as the vector store.
+A full-stack app for chatting with AI over your own documents, with saved chat history. Upload files (.pdf, .md, .txt, .docx, .xlsx) individually or in bulk from a compressed archive, and organise them into folders.
 
-Features:
-- Chat
-  - Converse with AI
-  - Chat history
-- Knowledge base management
-  - Upload files in various formats (.pdf, .md, .txt, .docx, .xlsx)
-  - Delete files
-  - Organise files into folders
-  - Bulk upload from a compressed archive
-
-Architecture:
-- Core app (TypeScript)
-  - Frontend (Next.js)
-  - Backend (Fastify)
-    - File management
-    - Chat management
-- Retrieval service (Python, with FastAPI for the REST API and Haystack for the RAG pipeline)
-  - Runs the RAG pipeline that converts users' files into vectors and stores them in the vector DB
-  - Provides a search API
+The core app is written in TypeScript (Next.js frontend, Fastify backend) and handles files and chats, with PostgreSQL for persistence. A Python retrieval service (FastAPI and Haystack) runs the RAG pipeline that embeds files into Milvus and serves the search API.
 
 ### [SaaS Core - A full-stack base for building a SaaS product](https://github.com/danangan/saas-core)
 
@@ -48,27 +30,9 @@ Architecture:
 
 A base for multi-tenant SaaS products, where each company gets its own workspace (like Slack). It handles the common SaaS features so you can focus on building the actual product. Built in TypeScript with Next.js (frontend) and Fastify (backend).
 
-Features:
-- Authentication
-  - Log in
-  - Account creation
-- Platform admin
-  - Company management: create, rename, activate or deactivate, delete, change the plan
-  - User management: invite users, one at a time or in bulk
-  - Role management: company admin or member
-  - Company activity log
-- Company admin
-  - Team management: invite, edit, change roles, deactivate, delete
-  - Rename the company
-- All users
-  - Settings: personal info, change password, sign out everywhere
+It includes login and sign-up, plus a platform admin for managing companies, plans, users (including bulk invites), roles, and a company activity log. Company admins manage their own team and company name, and every user can update their profile and password or sign out everywhere.
 
-It also comes with a complete testing setup:
-- Unit and integration test runner using Jest
-- Integration test dependencies using Testcontainers
-- End-to-end tests using Playwright, with two modes:
-  - Staging mode
-  - Local mode, which runs against local dependencies for local development
+It also comes with a complete testing setup: Jest for unit and integration tests, Testcontainers for integration test dependencies, and Playwright end-to-end tests that run against staging or local dependencies.
 
 ### [LLM Deployment to k8s](https://github.com/danangan/diy-llm)
 
